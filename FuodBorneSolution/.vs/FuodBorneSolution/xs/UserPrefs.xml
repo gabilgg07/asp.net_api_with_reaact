@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{AC39A6BE-FFB5-40C9-9E9C-8972FB770A37}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FuodBorne.WebApi5/Startup.cs">
+    <Files>
+      <File FileName="FuodBorne.WebApi5/Startup.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FuodBorneSolution" expanded="True">
+            <Node name="FuodBorne.WebApi5" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.ItemProperties.FuodBorne.WebApi5 PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

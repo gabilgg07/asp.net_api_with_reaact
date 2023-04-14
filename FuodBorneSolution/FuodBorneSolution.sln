@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1704.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuodBorne.WebApi5", "FuodBorne.WebApi5\FuodBorne.WebApi5.csproj", "{AC39A6BE-FFB5-40C9-9E9C-8972FB770A37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuodBorne.Application5", "FuodBorne.Application5\FuodBorne.Application5.csproj", "{7335525B-B470-426B-98AB-2E5F75816110}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC39A6BE-FFB5-40C9-9E9C-8972FB770A37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC39A6BE-FFB5-40C9-9E9C-8972FB770A37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC39A6BE-FFB5-40C9-9E9C-8972FB770A37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC39A6BE-FFB5-40C9-9E9C-8972FB770A37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7335525B-B470-426B-98AB-2E5F75816110}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7335525B-B470-426B-98AB-2E5F75816110}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7335525B-B470-426B-98AB-2E5F75816110}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7335525B-B470-426B-98AB-2E5F75816110}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B8D2BFD-5DFB-40A0-B90B-9A24D5B3B57C}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "Hash": "S5L6vltr0UfMbfcYZ2nqTBP5TCWTzKUC/sj+j8FZXJw=",
+  "Source": "FuodBorne.WebApi7",
+  "BasePath": "_content/FuodBorne.WebApi7",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "FuodBorne.WebApi7/wwwroot",
+      "Source": "FuodBorne.WebApi7",
+      "ContentRoot": "/Volumes/MySSD/01.Codes/12.mix-ASP.Net Api, React/asp.net_api_with_reaact/FuodBorneSolution/FuodBorne.WebApi7/wwwroot/",
+      "BasePath": "_content/FuodBorne.WebApi7",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Volumes/MySSD/01.Codes/12.mix-ASP.Net Api, React/asp.net_api_with_reaact/FuodBorneSolution/FuodBorne.WebApi7/wwwroot/uploads/.DS_Store",
+      "SourceId": "FuodBorne.WebApi7",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Volumes/MySSD/01.Codes/12.mix-ASP.Net Api, React/asp.net_api_with_reaact/FuodBorneSolution/FuodBorne.WebApi7/wwwroot/",
+      "BasePath": "_content/FuodBorne.WebApi7",
+      "RelativePath": "uploads/.DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/.DS_Store"
+    },
+    {
+      "Identity": "/Volumes/MySSD/01.Codes/12.mix-ASP.Net Api, React/asp.net_api_with_reaact/FuodBorneSolution/FuodBorne.WebApi7/wwwroot/uploads/images/service_1.jpg",
+      "SourceId": "FuodBorne.WebApi7",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Volumes/MySSD/01.Codes/12.mix-ASP.Net Api, React/asp.net_api_with_reaact/FuodBorneSolution/FuodBorne.WebApi7/wwwroot/",
+      "BasePath": "_content/FuodBorne.WebApi7",
+      "RelativePath": "uploads/images/service_1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/images/service_1.jpg"
+    },
+    {
+      "Identity": "/Volumes/MySSD/01.Codes/12.mix-ASP.Net Api, React/asp.net_api_with_reaact/FuodBorneSolution/FuodBorne.WebApi7/wwwroot/uploads/images/service_2.jpg",
+      "SourceId": "FuodBorne.WebApi7",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Volumes/MySSD/01.Codes/12.mix-ASP.Net Api, React/asp.net_api_with_reaact/FuodBorneSolution/FuodBorne.WebApi7/wwwroot/",
+      "BasePath": "_content/FuodBorne.WebApi7",
+      "RelativePath": "uploads/images/service_2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/images/service_2.jpg"
+    },
+    {
+      "Identity": "/Volumes/MySSD/01.Codes/12.mix-ASP.Net Api, React/asp.net_api_with_reaact/FuodBorneSolution/FuodBorne.WebApi7/wwwroot/uploads/images/service_3.jpg",
+      "SourceId": "FuodBorne.WebApi7",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Volumes/MySSD/01.Codes/12.mix-ASP.Net Api, React/asp.net_api_with_reaact/FuodBorneSolution/FuodBorne.WebApi7/wwwroot/",
+      "BasePath": "_content/FuodBorne.WebApi7",
+      "RelativePath": "uploads/images/service_3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/images/service_3.jpg"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+/Volumes/MySSD/01.Codes/12.mix-ASP.Net Api, React/asp.net_api_with_reaact/FuodBorneSolution/FuodBorne.Application5/bin/Debug/net5.0/FuodBorne.Application5.deps.json
+/Volumes/MySSD/01.Codes/12.mix-ASP.Net Api, React/asp.net_api_with_reaact/FuodBorneSolution/FuodBorne.Application5/bin/Debug/net5.0/FuodBorne.Application5.runtimeconfig.json
+/Volumes/MySSD/01.Codes/12.mix-ASP.Net Api, React/asp.net_api_with_reaact/FuodBorneSolution/FuodBorne.Application5/bin/Debug/net5.0/FuodBorne.Application5.runtimeconfig.dev.json
+/Volumes/MySSD/01.Codes/12.mix-ASP.Net Api, React/asp.net_api_with_reaact/FuodBorneSolution/FuodBorne.Application5/bin/Debug/net5.0/FuodBorne.Application5.dll
+/Volumes/MySSD/01.Codes/12.mix-ASP.Net Api, React/asp.net_api_with_reaact/FuodBorneSolution/FuodBorne.Application5/bin/Debug/net5.0/FuodBorne.Application5.pdb
+/Volumes/MySSD/01.Codes/12.mix-ASP.Net Api, React/asp.net_api_with_reaact/FuodBorneSolution/FuodBorne.Application5/obj/Debug/net5.0/FuodBorne.Application5.csproj.AssemblyReference.cache
+/Volumes/MySSD/01.Codes/12.mix-ASP.Net Api, React/asp.net_api_with_reaact/FuodBorneSolution/FuodBorne.Application5/obj/Debug/net5.0/FuodBorne.Application5.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/MySSD/01.Codes/12.mix-ASP.Net Api, React/asp.net_api_with_reaact/FuodBorneSolution/FuodBorne.Application5/obj/Debug/net5.0/FuodBorne.Application5.AssemblyInfoInputs.cache
+/Volumes/MySSD/01.Codes/12.mix-ASP.Net Api, React/asp.net_api_with_reaact/FuodBorneSolution/FuodBorne.Application5/obj/Debug/net5.0/FuodBorne.Application5.AssemblyInfo.cs
+/Volumes/MySSD/01.Codes/12.mix-ASP.Net Api, React/asp.net_api_with_reaact/FuodBorneSolution/FuodBorne.Application5/obj/Debug/net5.0/FuodBorne.Application5.csproj.CoreCompileInputs.cache
+/Volumes/MySSD/01.Codes/12.mix-ASP.Net Api, React/asp.net_api_with_reaact/FuodBorneSolution/FuodBorne.Application5/obj/Debug/net5.0/FuodBorne.Application5.dll
+/Volumes/MySSD/01.Codes/12.mix-ASP.Net Api, React/asp.net_api_with_reaact/FuodBorneSolution/FuodBorne.Application5/obj/Debug/net5.0/refint/FuodBorne.Application5.dll
+/Volumes/MySSD/01.Codes/12.mix-ASP.Net Api, React/asp.net_api_with_reaact/FuodBorneSolution/FuodBorne.Application5/obj/Debug/net5.0/FuodBorne.Application5.pdb
+/Volumes/MySSD/01.Codes/12.mix-ASP.Net Api, React/asp.net_api_with_reaact/FuodBorneSolution/FuodBorne.Application5/obj/Debug/net5.0/FuodBorne.Application5.genruntimeconfig.cache
+/Volumes/MySSD/01.Codes/12.mix-ASP.Net Api, React/asp.net_api_with_reaact/FuodBorneSolution/FuodBorne.Application5/obj/Debug/net5.0/ref/FuodBorne.Application5.dll

@@ -1,0 +1,253 @@
+.footer-section {
+  float: left;
+  width: 100%;
+  padding: 100px 0 0;
+  color: #fff;
+  background: #2b343b;
+  .container {
+    position: relative;
+  }
+  .widget {
+    margin-bottom: 17px;
+    padding: 0;
+    background: transparent;
+    img {
+      margin-top: 3px;
+    }
+    p {
+      color: #d5d5d5;
+      margin-top: 15px;
+      float: left;
+      margin-bottom: 16px;
+    }
+    h5 {
+      color: #fffcf4;
+      text-transform: capitalize;
+      letter-spacing: 0;
+      font-size: 22px;
+      margin-bottom: 32px;
+    }
+  }
+  .email_field {
+    background: #3b3f46;
+    box-shadow: none;
+    color: #ddd;
+    line-height: 40px;
+    padding-left: 30px;
+    width: 100%;
+    margin-top: 5px;
+    border: 1px solid transparent;
+    &:focus {
+      border: 1px solid #9dca00;
+    }
+    &:focus-visible {
+      outline: none;
+    }
+  }
+}
+
+.widget {
+  display: inline-block;
+  margin-bottom: 45px;
+  width: 100%;
+  background: #f1f6fa;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.footer_socil {
+  overflow: hidden;
+  width: 100%;
+  .list-icons {
+    padding-left: 0;
+    list-style: none;
+    li {
+      float: left;
+      margin-bottom: 30px;
+      margin-right: 6px;
+      a {
+        color: #acaba9;
+        font-size: 18px;
+        padding-right: 7px;
+        &:hover {
+          color: #9dca00;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.footer_soc {
+  margin-bottom: 15px;
+}
+
+.quick_lnk {
+  position: relative;
+  ul {
+    li {
+      list-style: none;
+      padding-bottom: 12px;
+      padding-left: 20px;
+      a {
+        color: #d5d5d5;
+        &:hover {
+          color: #9dca00;
+          text-decoration: underline;
+        }
+      }
+      &:after {
+        position: absolute;
+        content: ">";
+        left: 0;
+        // margin-left: 16px;
+        width: 12px;
+        height: 1px;
+        margin-top: 0;
+        color: #9dca00;
+      }
+    }
+  }
+}
+
+.footer_recent_blog {
+  li {
+    border-bottom: 1px solid #3c3939;
+    padding-bottom: 18px;
+    margin-bottom: 13px;
+    overflow: hidden;
+    &:last-child {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom: 1px solid transparent;
+    }
+  }
+  img {
+    width: 88px;
+    float: left;
+    margin-right: 16px;
+    overflow: hidden;
+    height: 80px;
+  }
+  .post_cont {
+    overflow: hidden;
+    display: block;
+    i {
+      margin-right: 7px;
+      color: #9dca00;
+      font-size: 14px;
+    }
+    a {
+      span {
+        margin-top: 10px;
+        line-height: 23px;
+        color: #d5d5d5;
+        overflow: hidden;
+        display: block;
+        &:hover {
+          color: #9dca00;
+        }
+      }
+    }
+  }
+}
+.post-date {
+  color: #7d7d7d;
+}
+
+.news_letter_wrp {
+  p {
+    margin-top: -2px !important;
+  }
+  .submit-contact {
+    height: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+    border-radius: 30px;
+    font-size: 15px;
+    &:hover {
+      background-color: #3b3f46;
+      transition: all 0.4s ease;
+    }
+  }
+}
+.submit-contact {
+  padding: 0 30px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  display: inline-block;
+  overflow: hidden;
+  outline: none;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  position: relative;
+  margin: 0;
+  transition: all 0.4s ease;
+  background: #9dca00;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 2px;
+}
+.scrollup {
+  width: auto;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: 15px;
+  margin-bottom: -98px;
+  z-index: 99;
+  border: none;
+  color: #9dca00;
+  background: transparent;
+  span {
+    color: #9dca00;
+    background: transparent;
+    font-size: 15px;
+    padding: 9px 10px;
+    border: 2px solid #9dca00;
+    border-radius: 50%;
+    &:hover {
+      background: #9dca00;
+      color: #fff;
+    }
+  }
+  &:active,
+  &:focus,
+  &:hover {
+    color: hsla(0, 0%, 100%, 0.9);
+  }
+}
+
+.subfooter {
+  text-align: center;
+  color: #bababa;
+  position: relative;
+  width: 100%;
+  padding: 35px 0;
+  margin-top: 85px;
+  background: #252d32;
+  p {
+    margin: 0;
+    text-transform: capitalize;
+    color: #acaba9;
+    a {
+      color: #acaba9;
+    }
+  }
+}
+
+.footer-social-links {
+  ul {
+    li {
+      a {
+        text-align: center;
+        color: #bababa;
+        position: relative;
+      }
+    }
+  }
+}

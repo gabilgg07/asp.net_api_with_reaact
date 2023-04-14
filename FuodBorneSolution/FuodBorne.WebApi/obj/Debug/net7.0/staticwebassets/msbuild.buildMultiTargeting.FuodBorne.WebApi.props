@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/FuodBorne.WebApi.props" />
+</Project>

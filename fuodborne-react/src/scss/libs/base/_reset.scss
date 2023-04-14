@@ -1,0 +1,161 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  color: #61657a;
+  font-family: Karla, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2b343b;
+  font-family: Playfair Display, sans-serif;
+  margin: 0 0 15px;
+  padding: 0;
+  transition: 0.3s;
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 700;
+}
+h4 {
+  font-size: 22px;
+  line-height: 30px;
+}
+h5 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+p {
+  margin: 0 0 10px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+  color: #303030;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
+  & > * {
+    cursor: pointer;
+  }
+  &:focus,
+  &:hover {
+    color: inherit;
+    text-decoration: none !important;
+    outline: medium none;
+  }
+  & > * {
+    outline: medium none;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  background: #fff;
+  padding-top: 115px;
+  padding-bottom: 90px;
+}
+
+.small,
+small {
+  font-size: 80%;
+  font-weight: 400;
+}
+
+.list-inline,
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.more-link {
+  display: inline-block;
+  font-size: 16px;
+  padding: 12px 35px 13px;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 500;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+  transition-property: color;
+  transition-duration: 0.3s;
+  background: $primary-clr;
+  border-radius: 2px;
+
+  &:before {
+    width: 100%;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    background: #2b343b;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    color: #fff;
+    &:before {
+      height: 400%;
+      opacity: 1;
+    }
+  }
+}
+
+.logo {
+  background: transparent !important;
+  width: 189px;
+  img {
+    max-width: inherit;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1140px;
+  }
+}

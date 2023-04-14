@@ -1,0 +1,45 @@
+.base-header {
+  padding-bottom: 56px;
+  width: 57%;
+  margin: auto;
+  text-align: center;
+  small {
+    font-size: 18px;
+    color: #9dca00;
+    text-transform: capitalize;
+  }
+  h3 {
+    padding-bottom: 16px;
+    position: relative;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 0;
+    letter-spacing: 0.5px;
+    font-size: 40px;
+    line-height: 50px;
+    color: #2b343b;
+    margin-top: 5px;
+    &:before {
+      position: absolute;
+      content: "";
+      background-color: #aedf04;
+    }
+    &:after,
+    &:before {
+      position: absolute;
+      content: "";
+      background-color: #b9ea0f;
+      width: 15px;
+      height: 11px;
+      bottom: 0;
+      left: 50%;
+      margin-left: -1px;
+      border-radius: 136px;
+      margin-bottom: -6px;
+    }
+    &:after {
+      margin-left: -12px;
+      background-color: #9dca00;
+    }
+  }
+}

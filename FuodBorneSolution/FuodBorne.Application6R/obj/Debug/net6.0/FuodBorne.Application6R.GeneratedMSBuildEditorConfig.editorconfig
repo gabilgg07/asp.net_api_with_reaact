@@ -1,0 +1,25 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows,browser
+build_property.RootNamespace = FuodBorne.Application6R
+build_property.RootNamespace = FuodBorne.Application6R
+build_property.ProjectDir = /Volumes/MySSD/01.Codes/12.mix-ASP.Net Api, React/asp.net_api_with_reaact/FuodBorneSolution/FuodBorne.Application6R/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Volumes/MySSD/01.Codes/12.mix-ASP.Net Api, React/asp.net_api_with_reaact/FuodBorneSolution/FuodBorne.Application6R
+build_property._RazorSourceGeneratorDebug = 
+
+[/Volumes/MySSD/01.Codes/12.mix-ASP.Net Api\, React/asp.net_api_with_reaact/FuodBorneSolution/FuodBorne.Application6R/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/MySSD/01.Codes/12.mix-ASP.Net Api\, React/asp.net_api_with_reaact/FuodBorneSolution/FuodBorne.Application6R/Component1.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50MS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-99uf0wx0h6
