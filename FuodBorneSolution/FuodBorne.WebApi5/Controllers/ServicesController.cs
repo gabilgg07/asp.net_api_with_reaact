@@ -32,7 +32,20 @@ namespace FuodBorne.WebApi5.Controllers
         [SwaggerOperation("All Services")]
         public async Task<IActionResult> Get()
         {
-            var data = await db.Services.Where(d=> d.DeletedDate == null).ToListAsync();
+            var data = await db.Services
+                .Where(d=> d.DeletedDate == null)
+                //projection -> gelen data proyeksiyalanir ki, geriye ne qayitsin deye
+                .Select(s=>new
+                {
+                    s.Id,
+                    s.CategoryId,
+                    s.Name,
+                    s.Description,
+                    s.CreatedDate,
+                    s.CreatedByUserId,
+                    ImageUrl = $"https://localhost:5001/uploads/images/{s.ImageUrl}"
+                })
+                .ToListAsync();
             return Ok(data);
         }
 
