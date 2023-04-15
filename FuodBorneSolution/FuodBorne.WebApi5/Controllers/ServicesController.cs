@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using FuodBorne.Application.Models.DataContext;
 using FuodBorne.Application.Models.Entity;
+using FuodBorne.Application5.Models.Dto;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Swashbuckle.AspNetCore.Annotations;
@@ -14,10 +17,14 @@ namespace FuodBorne.WebApi5.Controllers
     public class ServicesController : ControllerBase
     {
         readonly FuodBorneDbContext db;
+        readonly IHttpContextAccessor ctx;
+        readonly IMapper mapper;
 
-        public ServicesController(FuodBorneDbContext db)
+        public ServicesController(FuodBorneDbContext db, IHttpContextAccessor ctx, IMapper mapper)
         {
             this.db = db;
+            this.ctx = ctx;
+            this.mapper = mapper;
         }
 
         [HttpGet("all")]
@@ -32,8 +39,25 @@ namespace FuodBorne.WebApi5.Controllers
         [SwaggerOperation("All Services")]
         public async Task<IActionResult> Get()
         {
-            var data = await db.Services.Where(d=> d.DeletedDate == null).ToListAsync();
-            return Ok(data);
+            //var data = await db.Services
+            //    .Where(d=> d.DeletedDate == null)
+            //    //projection -> gelen data proyeksiyalanir ki, geriye ne qayitsin deye
+            //    .Select(s=>new ServiceDto
+            //    {
+            //        Id= s.Id,
+            //        CategoryId = s.CategoryId,
+            //        Name = s.Name,
+            //        Description = s.Description,
+            //        CreatedDate = s.CreatedDate,
+            //        CreatedByUserId = s.CreatedByUserId,
+            //        ImageUrl = $"{ctx.GetHostName()}/uploads/images/{s.ImageUrl}"
+            //    })
+            //    .ToListAsync();
+
+            var data = await db.Services.Where(d => d.DeletedDate == null).ToListAsync();
+            var dto = mapper.Map<List<ServiceDto>>(data);
+
+            return Ok(dto);
         }
 
         [HttpGet("{id:int:min(1)}")]
@@ -41,7 +65,9 @@ namespace FuodBorne.WebApi5.Controllers
         public async Task<IActionResult> Get(int id)
         {
             var data = await db.Services.FirstOrDefaultAsync(d=>d.Id == id && d.DeletedDate == null);
-            return Ok(data);
+            var dto = mapper.Map<ServiceDto>(data);
+
+            return Ok(dto);
         }
 
         [HttpPost]

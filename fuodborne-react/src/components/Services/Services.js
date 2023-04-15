@@ -53,10 +53,7 @@ const Services = () => {
                   <div className="service-item">
                     <div className="img_serv">
                       <a href="/blackgallery/FuodBorne-react/services">
-                        <img
-                          src={`https://tidytheme.com/blackgallery/FuodBorne-react/assets/images/${s.imageUrl}`}
-                          alt="service"
-                        />
+                        <img src={s.imageUrl} alt="service" />
                       </a>
                     </div>
                     <div className="service_text">

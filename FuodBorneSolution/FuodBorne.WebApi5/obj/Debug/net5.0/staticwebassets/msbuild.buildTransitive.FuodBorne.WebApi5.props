@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="../buildMultiTargeting/FuodBorne.WebApi5.props" />
-</Project>
