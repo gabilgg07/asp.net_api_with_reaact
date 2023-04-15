@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "aRsTMMdWmZdHPWvT2BwqO91Yvy0xETAC4gQA80EZFZgJhkrqmxrojpeba4FPZLMNS9mSMwGVpLp9V1XZ9svomw==",
+  "dgSpecHash": "z7rMgspVEQX8mB6zJKK3CdDfWU1ir5nHI3TKNbY2aJCDpNr+7GydN/7VYV6LaiMzYdogiTWT2G4oTRf5aASjEg==",
   "success": true,
   "projectFilePath": "/Volumes/MySSD/01.Codes/12.mix-ASP.Net Api, React/asp.net_api_with_reaact/FuodBorneSolution/FuodBorne.Application5/FuodBorne.Application5.csproj",
   "expectedPackageFiles": [
+    "/Users/macbook/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/macbook/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/macbook/.nuget/packages/microsoft.aspnetcore.http.abstractions/2.2.0/microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "/Users/macbook/.nuget/packages/microsoft.aspnetcore.http.features/2.2.0/microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",

@@ -1,4 +1,8 @@
-﻿using FuodBorne.Application.Models.DataContext;
+﻿using System;
+using System.Linq;
+using AutoMapper;
+using FuodBorne.Application.Models.DataContext;
+using FuodBorne.Application5.Mapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -21,7 +25,24 @@ namespace FuodBorne.WebApi5
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(policy =>
+            {
+                policy.AddPolicy("allowAll", p =>
+                {
+                    p.AllowAnyOrigin()
+                    .AllowAnyHeader()
+                    .AllowAnyMethod();
+                });
+            });
+
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+            //var assemblies = AppDomain.CurrentDomain.GetAssemblies()
+            //    .Where(a=>a.FullName.Contains("FuodBorne"));
+
+            //services.AddAutoMapper(assemblies);
+
+
 
             services.AddSwaggerGen(c =>
             {
@@ -34,27 +55,42 @@ namespace FuodBorne.WebApi5
                 cfg.UseSqlServer(Configuration.GetConnectionString("cString"));
             });
 
-            services.AddCors(policy =>
+            services.AddAutoMapper(cfg =>
             {
-                policy.AddPolicy("allowAll", p=>
+                var profiles = AppDomain.CurrentDomain.GetAssemblies()
+                    .Where(a => a.FullName.Contains("FuodBorne"))
+                    .SelectMany(a => a.GetTypes())
+                    .Where(t => typeof(Profile).IsAssignableFrom(t));
+
+                var provider = services.BuildServiceProvider();
+
+                var ctx = provider.GetRequiredService<IHttpContextAccessor>();
+
+                foreach (var profile in profiles)
                 {
-                    p.AllowAnyOrigin()
-                    .AllowAnyHeader()
-                    .AllowAnyMethod();
-                });
+                    if (typeof(FoudBorneProfile).IsAssignableFrom(profile))
+                    {
+                        var instance = profile.GetConstructor(new[] { typeof(IHttpContextAccessor) })
+                        .Invoke(new object[] { ctx });
+
+                        cfg.AddProfile(instance as Profile);
+                        continue;
+                    }
+                    cfg.AddProfile(profile);
+                }
             });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseCors("allowAll");
+
             app.UseSwagger();
 
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
             });
-
-            app.UseCors("allowAll");
 
             if (env.IsDevelopment())
             {
