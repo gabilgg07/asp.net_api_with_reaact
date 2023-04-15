@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using FuodBorne.Application.Models.DataContext;
 using FuodBorne.Application.Models.Entity;
+using FuodBorne.WebApi5.Extensions;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Swashbuckle.AspNetCore.Annotations;
@@ -14,10 +16,12 @@ namespace FuodBorne.WebApi5.Controllers
     public class ServicesController : ControllerBase
     {
         readonly FuodBorneDbContext db;
+        readonly IHttpContextAccessor ctx;
 
-        public ServicesController(FuodBorneDbContext db)
+        public ServicesController(FuodBorneDbContext db, IHttpContextAccessor ctx)
         {
             this.db = db;
+            this.ctx = ctx;
         }
 
         [HttpGet("all")]
@@ -43,7 +47,7 @@ namespace FuodBorne.WebApi5.Controllers
                     s.Description,
                     s.CreatedDate,
                     s.CreatedByUserId,
-                    ImageUrl = $"https://localhost:5001/uploads/images/{s.ImageUrl}"
+                    ImageUrl = $"{ctx.GetHostName()}/uploads/images/{s.ImageUrl}"
                 })
                 .ToListAsync();
             return Ok(data);
